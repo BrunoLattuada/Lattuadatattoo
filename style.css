@@ -1,0 +1,161 @@
+
+/* estilo geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Caveat", cursive;
+    
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+/* estilo do cabeçalho */
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #8C7853;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.zap button:hover{
+    box-shadow: 0px 0px 8px #ffa600;
+    transform: scale(1.05);
+}
+
+.zap button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #8C7853;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/*estilo do topo do site*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+.flex{
+    display: flex;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #8C7853;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    font-size: 30px;
+    margin: 40px 0px;
+    text-align: justify;
+}
+
+/*estilo do portifolio*/
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #8C7853;
+}
+
+h2{
+    color: #8C7853;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    
+}
+
+.img-port{
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+}
+
+h3{
+    color: #8C7853;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+li{
+    font-size: 25px;
+    color: #ffa600;
+}
+
+p{
+    color: #8C7853;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+h4{
+    color: #ffa600;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 1020px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+}
+
+
